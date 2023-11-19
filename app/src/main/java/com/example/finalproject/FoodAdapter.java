@@ -59,7 +59,7 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHolder
         }
 
         public void bindData(final FoodModel item) {
-//            ivImage.setImageResource(item.getImage());
+            ivImage.setImageResource(item.getImageResourceId());
             tvName.setText(item.getName());
             tvPrice.setText(item.getPrice());
             tvRating.setText(item.getRating());

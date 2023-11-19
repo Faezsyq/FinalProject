@@ -24,9 +24,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void addData() {
         elements = new ArrayList<>();
-        elements.add(new FoodModel("Rendang", "20000", "4"));
-        elements.add(new FoodModel("Mie Ayam", "10000", "5"));
-        elements.add(new FoodModel("Baso", "120000", "4"));
+        elements.add(new FoodModel("Rendang", "20000", "4", R.drawable.rendang));
+        elements.add(new FoodModel("Mie Ayam", "10000", "5", R.drawable.mieayam));
+        elements.add(new FoodModel("Baso", "120000", "4", R.drawable.baso));
 
         FoodAdapter adapter = new FoodAdapter(elements, this, new FoodAdapter.OnItemClickListener(){
             @Override
@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(adapter);
+        recyclerView.setNestedScrollingEnabled(false);
     }
 
 //    private void detail(FoodModel item) {

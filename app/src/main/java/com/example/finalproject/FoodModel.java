@@ -6,20 +6,21 @@ public class FoodModel implements Serializable {
     public String name;
     public String price;
     public String rating;
-    public Integer image;
+    public Integer imageResourceId;
 
-    public FoodModel(String name, String price, String rating) {
+    public FoodModel(String name, String price, String rating, int imageResourceId) {
         this.name = name;
         this.price = price;
         this.rating = rating;
+        this.imageResourceId = imageResourceId;
     }
 
-    public Integer getImage() {
-        return image;
+    public int getImageResourceId() {
+        return imageResourceId;
     }
 
     public void setImage(Integer image) {
-        this.image = image;
+        this.imageResourceId = image;
     }
 
     public String getName() {

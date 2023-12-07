@@ -5,10 +5,10 @@
     android:id="@+id/cardView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
+    android:layout_margin="16dp"
     android:foreground="?android:attr/selectableItemBackground"
-    app:cardCornerRadius="8dp"
-    app:cardElevation="4dp">
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -20,6 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:scaleType="centerCrop"
+            android:layout_margin="8dp"
             android:src="@drawable/ic_launcher_foreground"/>
 
         <!-- TextView for Name -->
@@ -31,7 +32,7 @@
             android:textSize="18sp"
             android:textColor="@android:color/black"
             android:layout_below="@id/ivImage"
-            android:padding="8dp"/>
+            android:padding="4dp"/>
 
         <!-- TextView for Price -->
         <TextView
@@ -42,7 +43,7 @@
             android:textSize="16sp"
             android:textColor="@android:color/darker_gray"
             android:layout_below="@id/tvName"
-            android:padding="8dp"/>
+            />
 
         <!-- RatingBar for Rating -->
         <RatingBar
